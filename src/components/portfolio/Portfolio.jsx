@@ -5,6 +5,7 @@ import './portfolio.css'
 import Menu from './Menu'
 // Icon
 import {IoCodeWorkingSharp} from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
@@ -31,7 +32,6 @@ const Portfolio = () => {
 
       <div className="work_container grid">
         {
-          // items.map((elem) => {
             items.map((elem) => {
               const {id, img, title, category} = elem;
               return(
@@ -43,9 +43,9 @@ const Portfolio = () => {
 
                 <span className="work_category">{category}</span>
                 <h3 className="work_title">{title}</h3>
-                <a href="#" className="work_button">
+                <Link to='/' className="work_button">
                   <i className="icon_link"><IoCodeWorkingSharp/></i>
-                </a>
+                </Link>
               </div>
             )
           })
@@ -55,4 +55,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Portfolio;

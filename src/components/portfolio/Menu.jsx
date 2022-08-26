@@ -40,10 +40,10 @@ const Menu = [
     },
     {
         id: 6,
-        img: img2,
+        img: img6,
         title: 'Game Store App Concept',
         category: 'Art'
     }
 ]
 
-export default Menu
+export default Menu;

@@ -20,7 +20,7 @@ const Sidebar = () => {
   return (
     <>     
       <aside className={show ? 'aside show_menu' : 'aside'}>
-        <a href="#home" className='nav_logo'>
+        <a href="#home" target='_blanket' className='nav_logo'>
           <img src={img} alt="" />
         </a>
 
@@ -29,43 +29,43 @@ const Sidebar = () => {
             <ul className="nav_list">
 
               <li className="nav_item">
-                <a href="#home" className="nav_link">
+                <a href="#home" target='_blanket' className="nav_link">
                   <IoHome/>
                 </a>
               </li>
 
               <li className="nav_item">
-                <a href="#about" className="nav_link">
+                <a href="#about" target='_blanket' className="nav_link">
                   <AiOutlineUserSwitch/> 
                 </a>
               </li>
 
               <li className="nav_item">
-                <a href="#services" className="nav_link">
+                <a href="#services" target='_blanket' className="nav_link">
                   <ImBriefcase/>
                 </a>
               </li>
 
               <li className="nav_item">
-                <a href="#resume" className="nav_link">
+                <a href="#resume" target='_blanket' className="nav_link">
                   <FaGraduationCap/>
                 </a>
               </li>
 
               <li className="nav_item">
-                <a href="#work" className="nav_link">
+                <a href="#work" target='_blanket' className="nav_link">
                   <IoLayers/>
                 </a>
               </li>
 
               <li className="nav_item">
-                <a href="#blog" className="nav_link">
+                <a href="#blog" target='_blanket' className="nav_link">
                   <GrNotes/>
                 </a>
               </li>
 
               <li className="nav_item">
-                <a href="#contact" className="nav_link">
+                <a href="#contact" target='_blanket' className="nav_link">
                   <ImBubbles2/>
                 </a>
               </li> 
