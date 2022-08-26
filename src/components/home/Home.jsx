@@ -4,19 +4,22 @@ import HeaderSocial from './HeaderSocial'
 
 // Css
 import './home.css'
+// Scroll
 import ScrollDown from './ScrollDown'
+// Img
+import img from '../assets/img1.jpg'
 
 export class Home extends Component {
   render() {
     return (
       <section className='home container' id='home'>
         <div className="intro">
-          <img src="https://i.pinimg.com/564x/d9/3e/a1/d93ea1be630ab2cb537571ab36599bf5.jpg" alt="" className="home_img" />
+          <img src={img} alt="" className="home_img" />
           <h1 className="home_name">Muhammad Jon</h1>
           <span className="home_education">I`m Front-End developer</span>
           <HeaderSocial/>
 
-          <a href="#contact" className="btn">Hire Me</a>
+          <a href="#contact" target="_blank" rel="noreferrer"  className="btn">Hire Me</a>
           
           <ScrollDown/>
         </div>

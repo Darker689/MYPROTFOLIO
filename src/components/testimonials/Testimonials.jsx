@@ -10,18 +10,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+// Img
+import img from '../assets/img1.jpg'
 
 const data = [
   {
     id: 1,
-    img: 'https://i.pinimg.com/564x/d9/3e/a1/d93ea1be630ab2cb537571ab36599bf5.jpg',
+    img1: img,
     title: 'John Doe',
     subtitle: 'Product designer at Dribble',
     comment: 'I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!'
   },
   {
     id: 2,
-    img: 'https://i.pinimg.com/564x/d9/3e/a1/d93ea1be630ab2cb537571ab36599bf5.jpg',
+    img1: img,
     title: 'John Doe',
     subtitle: 'Product designer at Dribble',
     comment: 'I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!'
@@ -43,11 +45,11 @@ export class Testimonials extends Component {
           pagination={{ clickable: true }}
         >
           {
-            data.map(({id, img, title, subtitle, comment}) => {
+            data.map(({id, img1, title, subtitle, comment}) => {
               return(
                 <SwiperSlide className="testimonial_item" key={id}>
                   <div className="thumb">
-                    <img src={img} alt="" />
+                    <img src={img1} alt="" />
                   </div>
                   <h3 className="testimonials_title">{title}</h3>
                   <span className='subtitle'>{subtitle}</span>

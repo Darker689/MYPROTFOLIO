@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 // Css
 import './sidebar.css'
+// Img
+import img from '../assets/img.jpg'
 
 // Icon
 import {AiOutlineUserSwitch, AiOutlineMenu} from 'react-icons/ai'
@@ -19,7 +21,7 @@ const Sidebar = () => {
     <>     
       <aside className={show ? 'aside show_menu' : 'aside'}>
         <a href="#home" className='nav_logo'>
-          <img src="https://cdn3.vectorstock.com/i/thumb-large/72/47/luxury-minimalist-crown-label-logo-icon-vector-38807247.jpg" alt="" />
+          <img src={img} alt="" />
         </a>
 
         <nav className="nav">

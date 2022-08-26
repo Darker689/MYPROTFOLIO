@@ -1,23 +1,27 @@
 import React, { Component } from 'react'
 // Css
 import './services.css'
+// Img
+import img1 from '../assets/img.png'
+import img2 from '../assets/img.webp'
+import img3 from '../assets/img.jpeg'
 
 const data = [
   {
     id: 1,
-    img: 'https://cygnussofttech.com/images/web-design/ui-ux-design.png',
+    img: img1,
     title: 'UI/UX design',
     desc: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo liguli eget.'
   },
   {
     id: 2,
-    img: 'https://img.freepik.com/premium-vector/web-development-concept-website-coding-web-page-3d-vector-icon-cartoon-minimal-style_365941-672.jpg',
+    img: img2,
     title: 'Web Development',
     desc: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo liguli eget.'
   },
   {
     id: 3,
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThYkksD3QA0UsbBoY1AFCaRwNXwR50CMprKw&usqp=CAU',
+    img: img3,
     title: 'Photography',
     desc: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo liguli eget.'
   }
